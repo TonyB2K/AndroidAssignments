@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidZadaci</string>
+    <string name="hello_message">Zdravo Svijet!</string>
+    <string name="ButtonText">Ja sam dugme</string>
+</resources>

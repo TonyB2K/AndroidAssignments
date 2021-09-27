@@ -3,4 +3,9 @@
     <string name="app_name">AndroidZadaci</string>
     <string name="hello_message">Zdravo Svijet!</string>
     <string name="ButtonText">Ja sam dugme</string>
+    <string name="LoginText">Email:</string>
+    <string name="PasswordText">Lozinka:</string>
+    <string name="RadioText">RadioDugme</string>
+    <string name="CheckText">CheckKocka</string>
+    <string name="SwitchText">Sta radi ovo?</string>
 </resources>

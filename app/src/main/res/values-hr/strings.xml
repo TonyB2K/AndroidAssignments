@@ -8,4 +8,10 @@
     <string name="RadioText">RadioDugme</string>
     <string name="CheckText">CheckKocka</string>
     <string name="SwitchText">Sta radi ovo?</string>
+    <string name="LoginButton">Prijavi</string>
+
+    <string name="dialog_message">"Ustavi aktivnost?"</string>
+    <string name="dialog_title">"Potvrda"</string>
+    <string name="ok">"Ok"</string>
+    <string name="cancel">"Otkazati"</string>
 </resources>

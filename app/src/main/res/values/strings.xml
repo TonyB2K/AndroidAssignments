@@ -7,4 +7,10 @@
     <string name="RadioText">RadioButton</string>
     <string name="CheckText">CheckBox</string>
     <string name="SwitchText">What does this do?</string>
+    <string name="LoginButton">Login</string>
+
+    <string name="dialog_message">"End Activity?"</string>
+    <string name="dialog_title">"Confirmation"</string>
+    <string name="ok">"Ok"</string>
+    <string name="cancel">"Cancel"</string>
 </resources>

@@ -16,6 +16,6 @@
 
     <string name="chat">"Start Chat"</string>
     <string name="text">New Text</string>
-    <string name="send">SEND</string>
+    <string name="send">Send</string>
 
 </resources>

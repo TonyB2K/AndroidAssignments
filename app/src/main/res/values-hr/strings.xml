@@ -16,6 +16,6 @@
 
     <string name="chat">"Zapoceti Chat"</string>
     <string name="text">Novi Text</string>
-    <string name="send">SEND</string>
+    <string name="send">Posalji</string>
 
 </resources>

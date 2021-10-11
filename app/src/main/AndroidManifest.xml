@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.example.androidassignments">
-
-    <uses-permission android:name="android.hardware.camera" android:requiredFeature="true" />
+    <uses-permission
+        android:name="android.hardware.camera"
+        android:requiredFeature="true" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments"
+        android:supportsRtl="true"
         android:roundIcon="@mipmap/ic_launcher_round"
-        >
-
+        android:label="@string/app_name">
+        <meta-data
+            android:name = "android.support.MainActivity"
+            android:value = ".ChatWindow" />
         <activity
+            android:parentActivityName=".MainActivity"
+            android:name=".ChatWindow"
+            android:exported="true"/>
+        <activity
+            android:parentActivityName=".LoginActivity"
             android:name=".MainActivity"
-            android:exported="true" />
-
+            android:exported="true"/>
         <activity
             android:name=".ListItemsActivity"
-            android:exported="true" />
-
+            android:parentActivityName=".MainActivity"
+            android:exported="true"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
     </application>
-
 </manifest>

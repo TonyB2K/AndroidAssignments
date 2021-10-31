@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     //Variables
     Button button;
     Button c;
+    Button toolbutt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         //Buttons
         c = (Button) findViewById(R.id.start_chat);
         button = (Button) findViewById(R.id.button);
+        toolbutt = (Button) findViewById(R.id.toolbarbutt);
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -39,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
         c.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -54,6 +55,18 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             }
+        });
+
+        toolbutt.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(MainActivity.this, TestToolbar.class);
+                startActivityForResult(i, 10);
+
+            }
+
         });
 
     }

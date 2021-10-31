@@ -18,4 +18,18 @@
     <string name="text">Novi Text</string>
     <string name="send">Posalji</string>
 
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Prvi Fragment</string>
+    <string name="second_fragment_label">Drugi Fragment</string>
+    <string name="next">Sljedeci</string>
+    <string name="previous">Prethodni</string>
+
+    <string name="hello_first_fragment">Zdravo prvi fragment</string>
+    <string name="hello_second_fragment">Zdravo drugi fragment. Arg: %1$s</string>
+
+    <string name="toolbarbutttext">Test Toolbar</string>
+
+    <string name="title">Vrati se?</string>
+
 </resources>

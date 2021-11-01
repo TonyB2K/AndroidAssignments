@@ -1,6 +1,11 @@
 package com.example.androidassignments;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -26,6 +31,8 @@ public class ChatWindow extends AppCompatActivity {
     EditText t;
     Button b;
     ArrayList<String> list = new ArrayList<String>();
+
+    @SuppressLint("Range")
     @Override
 
     //Creating the window
@@ -41,6 +48,20 @@ public class ChatWindow extends AppCompatActivity {
         ChatAdapter messageAdapter = new ChatAdapter( this );
         v.setAdapter(messageAdapter);
 
+        ChatDatabaseHelper chathelper = new ChatDatabaseHelper(this);
+        SQLiteDatabase db = chathelper.getReadableDatabase();
+        String SELECT_QUERY = "SELECT * FROM " + chathelper.TABLE_NAME;
+        Cursor mouse = db.rawQuery(SELECT_QUERY, null);
+        Log.i(ACTIVITY_NAME, "Cursor’s column count = " + mouse.getColumnCount() + " and column names: " + mouse.getColumnNames()[0] + ", " + mouse.getColumnNames()[1]);
+        int i = 1;
+        while(mouse.moveToNext()) {
+            String item = mouse.getString(mouse.getColumnIndexOrThrow(chathelper.KEY_MESSAGE));
+            Log.i(ACTIVITY_NAME,i + ": " + item);
+            i=i+1;
+        }
+        db.close();
+        mouse.close();
+
         //Button listener
         b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +71,9 @@ public class ChatWindow extends AppCompatActivity {
                 String w = (t.getText()).toString();
 
                 //Sending string
+                SQLiteDatabase db = chathelper.getWritableDatabase();
+                String INSERT_QUERY = "INSERT INTO \'" + chathelper.TABLE_NAME + "\' (\'" + chathelper.KEY_MESSAGE + "\')" + " VALUES (\'" + w + "\')";
+                db.execSQL(INSERT_QUERY);
                 list.add(w);
                 int position = messageAdapter.getCount();
                 messageAdapter.notifyDataSetChanged();

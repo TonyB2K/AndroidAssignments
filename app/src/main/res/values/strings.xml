@@ -31,5 +31,9 @@
 
     <string name="title">Go back?</string>
 
+    <string name="weatherbutttext">Weather</string>
+
+    <string name="loadingtemp">Loading Temperature...</string>
+
 
 </resources>

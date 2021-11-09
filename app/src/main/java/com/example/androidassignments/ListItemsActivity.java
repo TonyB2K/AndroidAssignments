@@ -179,4 +179,10 @@ public class ListItemsActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(Activity.RESULT_CANCELED);
+        finish();
+    }
 }

@@ -1,5 +1,6 @@
 package com.example.androidassignments;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -93,6 +94,12 @@ public class TestToolbar extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(Activity.RESULT_CANCELED);
+        finish();
     }
 
 }

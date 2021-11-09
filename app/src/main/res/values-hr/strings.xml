@@ -32,4 +32,8 @@
 
     <string name="title">Vrati se?</string>
 
+    <string name="weatherbutttext">Vrjeme</string>
+
+    <string name="loadingtemp">Temperatura Učitavanja</string>
+
 </resources>

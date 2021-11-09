@@ -1,5 +1,6 @@
 package com.example.androidassignments;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.Button;
@@ -77,5 +78,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(Activity.RESULT_CANCELED);
+        finish();
     }
 }

@@ -5,12 +5,14 @@
       <map>
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/activity_chat_window.xml" value="0.271875" />
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/activity_list_items.xml" value="0.271875" />
-        <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/activity_login.xml" value="0.26333059885151766" />
+        <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/activity_test_toolbar.xml" value="0.30520833333333336" />
+        <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/activity_weather_forecast.xml" value="0.13518518518518519" />
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/chat_layout_outgoing.xml" value="0.271875" />
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/chat_row_incoming.xml" value="0.271875" />
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/chat_row_outgoing.xml" value="0.271875" />
+        <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/layout/weatherforecast.xml" value="0.10663627152988855" />
         <entry key="..\:/Users/Tony/AndroidStudioProjects/AndroidAssignments/app/src/main/res/menu/toolbar_menu.xml" value="0.30520833333333336" />
       </map>
     </option>
